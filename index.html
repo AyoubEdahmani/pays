@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.7.0.min.js"></script>
+    <style>
+
+        .valid:focus{
+            box-shadow: 0 0 10px rgb(0, 247, 255);
+        }
+        .error:focus{
+            box-shadow: 0 0 10px rgb(255, 0, 0);
+        }
+        .errorSpan{
+            color: red;
+            font-size: large;
+            font-weight: bold;
+            background-color: rgba(255, 103, 103, 0.192);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .wr:focus{
+            box-shadow: 0 0 10px rgb(255, 230, 0);
+        }
+        .wrSpan{
+            color: rgb(255, 102, 0);
+            font-size: large;
+            font-weight: bold;
+            background-color: rgba(146, 255, 103, 0.192);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #aff{
+            border: 1px solid rgb(112, 112, 112);
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        td,th{
+            padding: 100px;
+        }
+        .serch{
+            padding: 50px;
+            position: relative;
+            top: 150px;
+        }
+        #aff{
+            margin: 10px auto;
+            display: none;
+        }
+        
+        </style>
+</head>
+<body >
+    <div class="container  text-center serch "> 
+        <input type="search  "  class="  text-center m-auto d-block mt-5 form-control"
+         placeholder="quels pays que vous voulez"  style="background-color: rgb(235, 235, 235);">
+        <button id="btn" class="btn btn-outline-primary  m-5">search</button>
+    </div>
+
+    <script src="pays.js"></script>
+    
+</body>
+</html>
